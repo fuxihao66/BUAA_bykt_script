@@ -22,12 +22,13 @@ soup = BeautifulSoup(p.text,'lxml')
 list1 = soup.findAll('tr', class_='GridViewRowStyle')
 list2 = soup.findAll('tr', class_='GridViewAlternatingRowStyle')
 
-
+s = ""
 for item in list1:
 	for child in item:
 		print(child.string)
 for item in list2:
 	for child in item:
 		print(child.string)
+
 # print(list1)
 # print(list2)
